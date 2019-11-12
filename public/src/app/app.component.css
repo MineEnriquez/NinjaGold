@@ -1,0 +1,22 @@
+.wrapper{
+    width: 1000px;
+    margin: auto auto;
+}
+.tile{
+    width: 25%;
+    padding: 10px;
+    border: whitesmoke 4px solid;
+}
+.green{
+    color: green;
+}
+.transactions{
+    height: 500px;
+    width: 100%;
+    overflow-y: auto;
+}
+.score{
+    width: 100px;
+    color: bisque;
+    text-align: center;
+}

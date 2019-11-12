@@ -13,4 +13,22 @@ module.exports =  {
         })
         .catch(err => res.json(err));
     },
+    e2etest: function (req, res) {
+        console.log (req.body);
+        res.json("Success");
+    },
+
+    newGame: function (req, res) {
+        console.log(req.body);
+        newgame = new Ninja(req.body);
+        newgame.save()
+            .then(saveResult => {
+                console.log("---------------------------");
+                res.json(saveResult);
+            })
+            .catch(err => {
+                console.log("Error creating a new Ninja record");
+                res.json(err);
+            });
+    },
 }
